@@ -1,0 +1,50 @@
+@use "generales";
+@use "./utilities/variables";
+@use "sass:map";
+@use "./utilities/maps" as mapa;
+@use "./utilities/extend";
+@use "./utilities/mixin";
+@use "mediaqueris";
+
+.nav-opciones {
+    a {
+        background-color: map.get(mapa.$colores, color-fondo);
+        box-shadow: variables.$sombra;
+        @extend %flex;
+        row-gap: 20px;
+        column-gap: 20px;
+
+        &:hover {
+            transform: scale(1.01);
+            color: map.get(mapa.$colores, color2);
+
+            .nav-link {
+                color: map.get(mapa.$colores, color1);
+            }
+        }
+    }
+}
+
+.producto {
+    color: map.get(mapa.$colores, color1);
+    text-decoration: underline;
+    @extend %flex;
+}
+
+.nav-link {
+    color: map.get(mapa.$colores, color1);
+}
+
+.grilla {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    justify-content: center; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+
+.grilla img:hover {
+    transform:
+    scale(1.01);
+}
+}

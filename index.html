@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Animate-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Relación CSS y bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Relación tipo de fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Ele.pottery</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/logo.png" width="150">
+        <h1 class="encabezado">Con las manos en la arcilla</h1>
+        <!-- Rutas relativas -->
+        <!-- Nav de bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light-mi-fondo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logosinfondo animate__animated animate__tada" src="./assets/img/logosinfondo.png" width="50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/talleres-cursos-eventos.html">Talleres, cursos y eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/testimonios.html">Testimonios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="introduccion">
+                <p><strong>Te invitamos a conocernos un poco más y a conocer nuestros servicios y talleres.</strong></p>
+            </div>
+        </section>
+        <section class="inicio">
+            <div class="container-inicio">
+                <img src="assets/img/ceramicas.png" class="img-fluid w-50 mx-auto d-block" alt="">
+            </div>
+        </section>
+        <h2><strong>Talleres y cursos</strong></h2>
+        <section class="talleres"></section>
+        <!-- <h3>Talleres disponibles</h3>
+            <ul>
+                <li><strong>Taller intensivo: Desayuno/Merienda y ceramica</strong></li>
+                <p>Un encuentro en el que realizamos 1 pieza desde cero, y otra que obtenemos a partir de la tecnica de
+                    molde para que puedan intervenir. + Desayuno o merienda</p>
+                <li><strong>Seminario</strong></li>
+                <p> 4 encuentros en los cuales vemos todo el proceso de la ceramica hasta obtener la pieza final</p>
+            </ul> -->
+        <div class="container">
+        <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/mujer-sosteniendo-piezas-de-ceramica-hechas-por-ella-misma.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Taller intensivo</h5>
+                    <p class="card-text">Desayuno/Merienda y ceramica hecha por vos.</p>
+                    <a href="./pages/talleres-cursos-eventos.html" class="btn btn-primario">Ver más</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/mujer-creativa-haciendo-una-olla-de-barro-en-su-taller (1).jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Seminario</h5>
+                    <p class="card-text">4 encuentros en los cuales vemos todo el proceso de la ceramica.</p>
+                    <a href="./pages/talleres-cursos-eventos.html" class="btn btn-primario">Ver más</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/foto-pagina-eventos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hace tu evento con nosotros</h5>
+                    <p class="card-text"> Día de cerámica en tu evento.</p>
+                    <a href="./pages/talleres-cursos-eventos.html" class="btn btn-primario">Ver más</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        <!-- <section class="hacetuevento">
+            <h2><strong>Hace tu evento con nosotros</strong></h2>
+            <p>Podes llamarnos para organizar tu evento y pasar un rato diferente con los tuyos. Nosotros llevamos todos
+                los materiales y lo necesario para cuidar todos tus espacios</p>
+            <ul>
+                <li>Cumpleaños</li>
+                <li>Evento sorpresa</li>
+                <li>Un dia distinto con amigas/os</li>
+            </ul>
+        </section> -->
+        <!-- <section class="galeria">
+            <div>
+                <img src="./assets/img/IMG_3464.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/IMG_3466.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/IMG_3658.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/IMG_3671.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/IMG_1027.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/IMG_3963.jpg" alt="">
+            </div> -->
+            <h2><strong>Quienes somos</strong></h2>
+            <section class="quienessomos">
+            <div class="imagenferia">
+                <img src="./assets/img/mujeres trabajando.jpg">
+            </div>
+            <div class="textoquienessomos">
+                <p>Somos dos amigas que, independientemente de sus trabajos y sus carreras (Licenciada en
+                    Administración
+                    y Arquitecta), decidieron volcar su lado artístico y creativo a la cerámica.</p>
+                <p>Empezamos haciendo cerámica por hobbie, hasta que decidimos empezar un emprendimiento,
+                    donde en
+                    principio haciamos piezas a pedido, luego nos extendimos a vender en ferias y en la
+                    actualidad damos
+                    talleres y cursos de inicio a la cerámica.
+                </p>
+            </div>
+        </section>
+        <section class="testimonios">
+            <h2><strong>Testimonios</strong></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/perfil1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Agustina: Gracias por la buena onda. Fue un cumpleaños
+                                    hermoso
+                                    compartido con toda mi gente haciendo algo que nos gusta y nos quedará
+                                    de recuerdo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/perfil6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Micaela: gracias por el taller que nos permitio saber
+                                    todo el
+                                    proceso de la ceramica y poner toda la energia en la arcilla. Re lindo
+                                    encuentro!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/perfil 3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Mara: me encanto pasar el dia del amigo de una forma
+                                    diferente y
+                                    divertida. Esta
+                                    buena la
+                                    propuesta
+                                    que dan para distintos eventos.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/perfil5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Magali: "A mi hija le encanto hacer su cumpleaños con
+                                    ustedes, una
+                                    linda forma de
+                                    pasar un
+                                    momento diferente con
+                                    sus amigas"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Datos de contacto -->
+        <section class="pie">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 col-lg-6">
+                        <h3 class="datos">Contacto</h3>
+                        <p> 221 555 4444</p>
+                        <h3 class="datos">Mail</h3>
+                        <p>elepottery.ceramica@gmail.com</p>
+                        <!-- Enlace absoluto -->
+                        <div class="link">
+                            <h3 class="datos">Instagram</h3>
+                            <a href="https://www.instagram.com/ele.pottery/">Ele.pottery</a>
+                        </div>
+                    </div>
+                    <!-- Formulario de contacto-->
+                    <div class="col-sm-7 col-lg-6">
+                        <h3 class="datos">Contactate con nosotros</h3>
+                        <div class="formulario">
+                            <form
+                                action="https://docs.google.com/spreadsheets/d/1fQl7xgCPEhQ2yqRY-DM3Snmw6yysPS7h2E6KOX6i-q0/edit?gid=0#gid=0"
+                                method="post">
+                                <div class="campo">
+                                    <label for="">Nombre y Apellido:</label>
+                                </div>
+                                <div class="input"><input type="text" name="nombre" id="nombre">
+                                </div>
+                                <div class="campo">
+                                    <label for="Email">Email:</label>
+                                </div>
+                                <div class="input">
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="campo">
+                                    <label for="celular">Celular</label>
+                                </div>
+                                <div class="input">
+                                    <input type="tel" name="telefono" id="telefono">
+                                </div>
+                                <div class="campo">
+                                    <label for="">Mensaje</label>
+                                </div>
+                                <div class="input">
+                                    <textarea name="mensaje" id="mensaje"></textarea>
+                                </div>
+                                <input type="submit" value="Enviar" class="botonenviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

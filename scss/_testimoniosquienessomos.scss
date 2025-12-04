@@ -1,0 +1,39 @@
+@use "generales";
+@use "./utilities/variables";
+@use "sass:map";
+@use "./utilities/maps" as mapa;
+@use "./utilities/extend";
+@use "./utilities/mixin";
+
+
+    .testimonios p {
+        font-style: italic;
+        width: 100%;
+        text-align: center;
+    }
+
+.quienessomos {
+    background-color: map.get(mapa.$colores, color-fondo);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 40px;
+    padding: 20px;
+
+    .imagenferia {
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+
+    .textoquienessomos {
+        width: 50%;
+        padding: 20px;
+    }
+}

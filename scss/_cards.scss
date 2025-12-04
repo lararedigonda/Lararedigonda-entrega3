@@ -1,0 +1,46 @@
+@use "./utilities/variables";
+@use "sass:map";
+@use "./utilities/maps"as mapa; 
+@use "./utilities/extend";
+@use "./utilities/mixin";
+
+.card {
+    @extend %flex;
+    @include mixin.tamaño(auto,auto);
+    justify-items: center;
+    background-color: map.get(mapa.$colores,color-fondo);
+    border-radius: 10px;
+    margin:20px;
+    box-shadow: variables.$sombra;
+    overflow: hidden; 
+&:hover {
+        transform: scale(1.01);
+    }
+
+    .card-img-top {
+        @include mixin.tamaño(250px,100%);
+        object-fit: cover;
+    }
+    .btn-primario {
+        background-color: variables.$boton;
+        border-color: map.get(mapa.$colores,color-fondo);
+
+        &:hover {
+            background-color:variables.$boton-hover;
+        }
+    }
+
+    .card-body {
+        text-align: center;
+        padding:20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: map.get(mapa.$colores,color1);
+        justify-content: center;
+        align-items: center;
+    }
+}

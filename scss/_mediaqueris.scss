@@ -1,0 +1,77 @@
+@use "generales";
+@use "./utilities/variables";
+@use "sass:map";
+@use "./utilities/maps" as mapa;
+@use "./utilities/extend";
+@use "./utilities/mixin";
+
+
+@media (max-width: 479px) {
+    .d-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 479px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .grilla .card {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .quienessomos {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .imagenferia {
+        width: 100% !important;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .textoquienessomos {
+        width: 100% !important;
+        padding: 10px;
+    }
+}
+
+
+
+/* .nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(241, 190, 216);
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-left: auto;
+    padding: 0;
+} */
+
+/*# sourceMappingURL=style.css.map */

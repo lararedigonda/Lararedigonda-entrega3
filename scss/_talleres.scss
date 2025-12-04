@@ -1,0 +1,32 @@
+@use "generales";
+@use "./utilities/variables";
+@use "sass:map";
+@use "./utilities/maps" as mapa;
+@use "./utilities/extend";
+@use "./utilities/mixin";
+
+
+.gap-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.cursos {
+    background-color: map.get(mapa.$colores, color-fondo);
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: variables.$sombra;
+}
